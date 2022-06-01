@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>480</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>Singleton
+--
+-mCounter : int
+--
+
+_+Instance() : Singleton&amp;_
+
++incrCount() : void
+
+&lt;&lt;friend&gt;&gt; operator&lt;&lt;(ostream&amp;, const Singleton&amp;) : ostream&amp;
+
+-Singleton()
+-Singleton(const Singleton &amp;) = delete
+-~Singleton()
+-operator=(const Singleton &amp;) = delete
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
